@@ -1,0 +1,443 @@
+
+commit 5995b80f5707097a42e076bdbe1644b9420aa67d
+Author: shubham <kadamshubham66@gmail.com>
+Date:   Tue Jul 11 20:29:24 2017 +0530
+
+    hello first commiutr
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/Git (master)
+$ git show 6ca9acfe63fc07e0603a7bb89ed5dc9285302744
+commit 6ca9acfe63fc07e0603a7bb89ed5dc9285302744
+Author: shubham <kadamshubham66@gmail.com>
+Date:   Wed Jul 12 21:03:03 2017 +0530
+
+    calculator
+
+diff --git a/calculator.java b/calculator.java
+new file mode 100644
+index 0000000..a404757
+--- /dev/null
++++ b/calculator.java
+@@ -0,0 +1,14 @@
++class Calculator
++{
++ static float FloatNumber2=50;
++public static void main(String args[])
++{
++ Calculator calculator=new Calculator();
++ float Multiplication=calculator.multiplication(52.4f);
++ System.out.println("Multiplication is"+Multiplication);
++}
++ public float multiplication(float FloatNumber1)
++ {
++ return FloatNumber1*FloatNumber2;
++ }
++}
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/Git (master)
+$ gst
+'gswin32' is not recognized as an internal or external command,
+operable program or batch file.
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/Git (master)
+$ ^C
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/Git (master)
+$ cls
+bash: cls: command not found
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/Git (master)
+$ clear
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/Git (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Areaofcircle.class
+        Calculator.class
+        HelloWord.class
+        command.txt
+        hello.java
+        how
+        t
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/Git (master)
+$ cat rakesh.java
+class Calculator
+{
+
+        int addNumber(int number1,int number2)
+        {
+                return(number1+number2);
+        }
+
+        float subNumber(float number1,float number2)
+        {
+                return(number1- number2);
+        }
+
+        double multNumber(double number1,double number2)
+        {
+                return(number1*number2);
+        }
+
+        public static void main(String []args)
+        {
+
+                Calculator calculator=new Calculator();
+
+                int result1=calculator.addNumber(5,8);
+
+                        System.out.println("\n Addition of :"+result1);
+
+                float result2=calculator.subNumber(5,6);
+
+                        System.out.println("\n Subtraction of: "+result2);
+
+                double result3=calculator.multNumber(5,5);
+
+                        System.out.println("\n Multiplication of: "+result3);
+
+
+        }
+}
+rckstr@rckstr-PC MINGW64 ~/Desktop/Git (master)
+$ glol
+bash: glol: command not found
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/Git (master)
+$ git log
+commit 335208d0e15dfe945760e14b666b40bbbbcda08b (HEAD -> master, origin/master)
+Author: shubham <rakeshmusale111@gmail.com>
+Date:   Wed Jul 12 23:09:31 2017 +0530
+
+    calculator
+
+commit 6ca9acfe63fc07e0603a7bb89ed5dc9285302744
+Author: shubham <kadamshubham66@gmail.com>
+Date:   Wed Jul 12 21:03:03 2017 +0530
+
+    calculator
+
+commit d8d07ac4b478d714294c445c7541e5bc02465c7c
+Author: shubham <kadamshubham66@gmail.com>
+Date:   Tue Jul 11 21:26:56 2017 +0530
+
+    area of circle
+
+commit 5995b80f5707097a42e076bdbe1644b9420aa67d
+Author: shubham <kadamshubham66@gmail.com>
+Date:   Tue Jul 11 20:29:24 2017 +0530
+
+    hello first commiutr
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/Git (master)
+$ git show 335208d0e15dfe945760e14b666b40bbbbcda08b
+commit 335208d0e15dfe945760e14b666b40bbbbcda08b (HEAD -> master, origin/master)
+Author: shubham <rakeshmusale111@gmail.com>
+Date:   Wed Jul 12 23:09:31 2017 +0530
+
+    calculator
+
+diff --git a/rakesh.java b/rakesh.java
+new file mode 100644
+index 0000000..75fb7a7
+--- /dev/null
++++ b/rakesh.java
+@@ -0,0 +1,38 @@
++class Calculator
++{
++
++       int addNumber(int number1,int number2)
++       {
++               return(number1+number2);
++       }
++
++       float subNumber(float number1,float number2)
++       {
++               return(number1- number2);
++       }
++
++       double multNumber(double number1,double number2)
++       {
++               return(number1*number2);
++       }
++
++       public static void main(String []args)
++       {
++
++               Calculator calculator=new Calculator();
++
++               int result1=calculator.addNumber(5,8);
++
++                       System.out.println("\n Addition of :"+result1);
++
++               float result2=calculator.subNumber(5,6);
++
++                       System.out.println("\n Subtraction of: "+result2);
++
++               double result3=calculator.multNumber(5,5);
++
++                       System.out.println("\n Multiplication of: "+result3);
++
++
++       }
++}
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/Git (master)
+$ git pull --rebase origin master
+From https://github.com/kadamshubham1996/git
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/Git (master)
+$ git remotew
+git: 'remotew' is not a git command. See 'git --help'.
+
+The most similar command is
+        remote
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/Git (master)
+$ git remote
+origin
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/Git (master)
+$ git remote show
+origin
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/Git (master)
+$ git show origin
+fatal: ambiguous argument 'origin': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/Git (master)
+$ git remote show origin
+* remote origin
+  Fetch URL: https://github.com/kadamshubham1996/git.git
+  Push  URL: https://github.com/kadamshubham1996/git.git
+  HEAD branch: master
+  Remote branch:
+    master tracked
+  Local branch configured for 'git pull':
+    master merges with remote master
+  Local ref configured for 'git push':
+    master pushes to master (up to date)
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/Git (master)
+$ git remote add origin https://github.com/rakesh16495/git.git
+fatal: remote origin already exists.
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/Git (master)
+$ git remote remove origin
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/Git (master)
+$ git remote add origin https://github.com/rakesh16495/git.git
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/Git (master)
+$ git push origi master
+fatal: 'origi' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/Git (master)
+$ git push origin master
+remote: Permission to rakesh16495/git.git denied to kadamshubham1996.
+fatal: unable to access 'https://github.com/rakesh16495/git.git/': The requested URL returned error: 403
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/Git (master)
+$ git push config --global user.name "rakesh16495"
+error: unknown option `global'
+usage: git push [<options>] [<repository> [<refspec>...]]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --repo <repository>   repository
+    --all                 push all refs
+    --mirror              mirror all refs
+    -d, --delete          delete refs
+    --tags                push tags (can't be used with --all or --mirror)
+    -n, --dry-run         dry run
+    --porcelain           machine-readable output
+    -f, --force           force updates
+    --force-with-lease[=<refname>:<expect>]
+                          require old value of ref to be at this value
+    --recurse-submodules[=<check|on-demand|no>]
+                          control recursive pushing of submodules
+    --thin                use thin pack
+    --receive-pack <receive-pack>
+                          receive pack program
+    --exec <receive-pack>
+                          receive pack program
+    -u, --set-upstream    set upstream for git pull/status
+    --progress            force progress reporting
+    --prune               prune locally removed refs
+    --no-verify           bypass pre-push hook
+    --follow-tags         push missing but relevant tags
+    --signed[=<yes|no|if-asked>]
+                          GPG sign the push
+    --atomic              request atomic transaction on remote side
+    -o, --push-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/Git (master)
+$ git config --global user.name "rakesh16495"
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/Git (master)
+$ git config --global user.email "rakeshmusale111@gmail.com"
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/Git (master)
+$ git push origin master
+remote: Permission to rakesh16495/git.git denied to kadamshubham1996.
+fatal: unable to access 'https://github.com/rakesh16495/git.git/': The requested URL returned error: 403
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/Git (master)
+$ cd .git/
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/Git/.git (GIT_DIR!)
+$ ls
+COMMIT_EDITMSG  config  description  FETCH_HEAD  HEAD  hooks/  index  info/  logs/  objects/  ORIG_HEAD  refs/
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/Git/.git (GIT_DIR!)
+$ cat config
+[core]
+        repositoryformatversion = 0
+        filemode = false
+        bare = false
+        logallrefupdates = true
+        symlinks = false
+        ignorecase = true
+[branch "master"]
+[remote "origin"]
+        url = https://github.com/rakesh16495/git.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/Git/.git (GIT_DIR!)
+$ cd ..
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/Git (master)
+$ git pull --rebase origin master
+fatal: Couldn't find remote ref master
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/Git (master)
+$ cd ..
+
+rckstr@rckstr-PC MINGW64 ~/Desktop (master)
+$ mkdir rakesh
+
+rckstr@rckstr-PC MINGW64 ~/Desktop (master)
+$ cd rakesh/
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/rakesh (master)
+$ cp ../Git/rakesh.java .
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/rakesh (master)
+$ git init
+Initialized empty Git repository in C:/Users/rckstr/Desktop/rakesh/.git/
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/rakesh (master)
+$ gst
+'gswin32' is not recognized as an internal or external command,
+operable program or batch file.
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/rakesh (master)
+$ git stataus
+git: 'stataus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/rakesh (master)
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        rakesh.java
+        t
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/rakesh (master)
+$ ls
+rakesh.java  t
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/rakesh (master)
+$ rm -rf t
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/rakesh (master)
+$ ls
+rakesh.java
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/rakesh (master)
+$ git commit -a -m "Hello"
+On branch master
+
+Initial commit
+
+Untracked files:
+        rakesh.java
+
+nothing added to commit but untracked files present
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/rakesh (master)
+$ git add .
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/rakesh (master)
+$ git commit -m "Hello"
+[master (root-commit) ed2bacd] Hello
+ 1 file changed, 38 insertions(+)
+ create mode 100644 rakesh.java
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/rakesh (master)
+$ git remote add origin https://github.com/rakesh16495/git
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/rakesh (master)
+$ git push origin master
+remote: Permission to rakesh16495/git.git denied to kadamshubham1996.
+fatal: unable to access 'https://github.com/rakesh16495/git/': The requested URL returned error: 403
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/rakesh (master)
+$ git push origin master
+remote: Permission to rakesh16495/git.git denied to kadamshubham1996.
+fatal: unable to access 'https://github.com/rakesh16495/git/': The requested URL returned error: 403
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/rakesh (master)
+$ git push origin master
+remote: Permission to rakesh16495/git.git denied to kadamshubham1996.
+fatal: unable to access 'https://github.com/rakesh16495/git/': The requested URL returned error: 403
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/rakesh (master)
+$ git remote add origin https://github.com/rakesh16495/JavaPrograms.git
+fatal: remote origin already exists.
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/rakesh (master)
+$ git remote remove origin
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/rakesh (master)
+$ git remote add origin https://github.com/rakesh16495/JavaPrograms.git
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/rakesh (master)
+$ git push origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 501 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/rakesh16495/JavaPrograms.git
+ * [new branch]      master -> master
+
+rckstr@rckstr-PC MINGW64 ~/Desktop/rakesh (master)
