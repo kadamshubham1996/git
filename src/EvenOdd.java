@@ -16,10 +16,10 @@ public class EvenOdd {
         for (int i = 0; i < n; i++) {
             if (value[i] % 2 == 0) {
                 int a = value[i] * value[i];
-                System.out.println("square is" + a);
+                System.out.println("My square is " + a);
             } else {
                 int b = value[i] * value[i] * value[i];
-                System.out.println("cube is" + b);
+                System.out.println("My cube is " + b);
             }
         }
 
