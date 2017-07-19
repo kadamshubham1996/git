@@ -1,7 +1,16 @@
 package Student;
 
-/**
- * Created by rckstr on 7/18/2017.
- */
+
 public class Student1 {
+
+
+    private Student1() {
+       System.out.println("hello");
+    }
+
+    public static Student1 abc() {
+        return new Student1();
+
+    }
+
 }

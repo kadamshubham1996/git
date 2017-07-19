@@ -1,7 +1,17 @@
 package Student;
 
-/**
- * Created by rckstr on 7/18/2017.
- */
-public class StudentApp1 {
+
+
+
+public class StudentApp1
+{
+
+    public static void main(String args[])
+    {
+
+        Student1.abc();
+
+    }
+
+
 }
