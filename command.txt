@@ -17,6 +17,7 @@ Initialized empty Git repository in C:/Users/rckstr/Desktop/Git/.git/
 
 rckstr@rckstr-PC MINGW64 ~/Desktop/Git (master)
 $ git status
+
 On branch master
 
 Initial commit
