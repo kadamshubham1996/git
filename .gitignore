@@ -15,6 +15,10 @@ cmake-build-debug/
 *.iws
 
 ## Plugin-specific files:
+*.class
+*.xml
+*.iml
+*.idea/
 
 # IntelliJ
 /out/
