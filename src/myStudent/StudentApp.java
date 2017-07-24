@@ -1,12 +1,8 @@
 package myStudent;
 
-/**
- * Created by rckstr on 7/17/2017.
- */
-
 
 import java.net.SocketPermission;
-import java.util.Scanner;
+import java.util.*;
 
 public class StudentApp {
     public static void main(String []args)
@@ -16,7 +12,8 @@ public class StudentApp {
         System.out.println("Enter the rollnumber");
         int rollNumber=Integer.parseInt(scanner.nextLine());
         System.out.println("Enter the name");
-        String name=scanner.nextLine();
+        String name;
+        name = scanner.nextLine();
         System.out.println("Enter the marks");
         float marks=Float.parseFloat(scanner.nextLine());
          student.setRollNumber(rollNumber);

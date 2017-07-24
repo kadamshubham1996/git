@@ -9,7 +9,7 @@ public class DemoHacker {
             String s1=sc.next();
             int x=sc.nextInt();
             String result=String.format("%03d",x);
-            System.out.println(s1+"\oret\t"+result+" ");
+            System.out.println(s1+"\t\t"+result+" ");
         }
         System.out.println("================================");
 

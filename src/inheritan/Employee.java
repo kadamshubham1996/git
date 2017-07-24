@@ -6,8 +6,5 @@ package inheritan;
 public class Employee extends Human {
     String work;
     int salary;
-    public void doActivity()
-    {
-        System.out.println("Job");
-    }
+
 }
