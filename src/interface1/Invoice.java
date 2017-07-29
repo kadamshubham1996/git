@@ -1,4 +1,4 @@
-package InvoiceFunction;
+package interface1;
 
 /**
  * Created by rckstr on 7/24/2017.
