@@ -7,7 +7,7 @@ public class test
     public static void main(String args[])throws ClassNotFoundException
     {
         int count = 0;
-       Class student = Class.forName("student");
+       Class student = Class.forName("jvm.student");
         Method[] m = student.getDeclaredMethods();
         for (Method m1 : m)
         {
