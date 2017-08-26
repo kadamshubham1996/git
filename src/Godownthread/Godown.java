@@ -37,7 +37,7 @@ public class Godown {
                 notify();
             }
             currentItemCount--;
-            System.out.println("product is present");
+            System.out.println("product is removing");
         }
 
     }
